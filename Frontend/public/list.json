@@ -1,0 +1,167 @@
+[
+    {
+        "id":1,
+        "name":"HTML",
+        "chpt": "Chapter no:1 ",
+        "title":"Introdution to the HTML",
+        "pages":"10 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+        
+    },
+    {
+        "id":2,
+        "name":"HTML",
+        "chpt": "Chapter no:2 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"20 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":3,
+        "name":"HTML",
+        "chpt": "Chapter no:3 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"16 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":4,
+        "name":"HTML",
+        "chpt": "Chapter no:4 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"18 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":5,
+        "name":"SQL",
+        "chpt": "Chapter no:1 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"16 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":6,
+        "name":"SQL",
+        "chpt": "Chapter no:2 ",
+        "title":"Introdution to the HTML",
+        "pages":"10 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+        
+    },
+    {
+        "id":7,
+        "name":"SQL",
+        "chpt": "Chapter no:3 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"20 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":8,
+        "name":"SQL",
+        "chpt": "Chapter no:4 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"16 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":9,
+        "name":"SQL",
+        "chpt": "Chapter no:5 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"18 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":10,
+        "name":"SQL",
+        "chpt": "Chapter no:6 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"18 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":11,
+        "name":"CN",
+        "chpt": "Chapter no:1 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"16 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":12,
+        "name":"CN",
+        "chpt": "Chapter no:2 ",
+        "title":"Introdution to the HTML",
+        "pages":"10 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+        
+    },
+    {
+        "id":13,
+        "name":"CN",
+        "chpt": "Chapter no:3 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"20 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":14,
+        "name":"CN",
+        "chpt": "Chapter no:4 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"16 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":15,
+        "name":"CN",
+        "chpt": "Chapter no:5 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"18 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":16,
+        "name":"CN",
+        "chpt": "Chapter no:6 ",
+        "title":"Lorem ipsum dolor sit amet consectetur",
+        "pages":"18 Pages",
+        "sem":"1st sem",
+        "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
+        "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    }
+    
+     
+]
