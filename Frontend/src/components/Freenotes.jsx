@@ -1,13 +1,30 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
+import axios from 'axios';
 
 import list from '../../public/list.json';
-import Card from './Card';
+import Card from '../components/Card';
+import Navbar from '../components/Navbar';
+import Book from '../../../Backend/model/book.model';
 
 function Freenotes() {
-    const filterData=list.filter((data)=>data.name==="HTML");
+  const [book, setBook] = useState([]);
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/book");
+
+        const data = res.data.filter((data)=>data.name==="HTML");
+        console.log(data);
+        setBook(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
     
     var settings = {
       dots: true,
@@ -53,7 +70,7 @@ function Freenotes() {
      </div>
      <div> 
       <Slider {...settings}>
-       {filterData.map((item)=>(
+       {book.map((item)=>(
         <Card item={item} key={item.id}/>
        ))}
       </Slider>
