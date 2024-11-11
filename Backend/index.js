@@ -12,9 +12,12 @@ app.use(cors());
 
 dotenv.config();
 
-const PORT = process.env.PORT || 4000 
+const apiUrl = process.env.REACT_APP_API_URL;
+ 
+const PORT = process.env.PORT || 4000;
 const URI = process.env.MongoDBURI;
-// connect to mongodb
+
+// connect to mongoDB
 try {
     mongoose.connect(URI, {
         useNewUrlParser: true,
@@ -25,11 +28,10 @@ try {
     console.log("Error: ", error);
 }
 
-//defining routes
-app.use("/book",bookRoute)
-app.use(express.json())
-app.use("/user",userRoute)
+// defining routes
+app.use("/book", bookRoute);
+app.use("/user", userRoute);
 
 app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-  });
+    console.log(`Server is listening on port ${PORT}`);
+});
