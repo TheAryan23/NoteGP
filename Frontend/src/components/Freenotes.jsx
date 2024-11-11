@@ -65,8 +65,8 @@ function Freenotes() {
    <>
      <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 my-20'>
      <div>
-     <h1 className='font-semibold text-xl pb-2'>free notes</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fuga autem deleniti est temporibus excepturi. Dolorem, soluta voluptate. Rerum iste perspiciatis harum fugit voluptates, pariatur molestias animi modi unde voluptas!</p>
+     <h1 className='font-semibold text-xl pb-2'>Free Notes</h1>
+      <p>This is an example notes of HTML language , more notes are available at Notes page but for that you have to login with your email !!! </p>
      </div>
      <div> 
       <Slider {...settings}>

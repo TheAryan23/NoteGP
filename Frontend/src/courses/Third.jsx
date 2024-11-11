@@ -12,19 +12,29 @@ import Book from '../../../Backend/model/book.model';
 
 function Third() {
   const [sqlBooks, setSqlBooks] = useState([]);
-  const [cnBooks, setCnBooks] = useState([]);
+  const [mprBooks, setMprBooks] = useState([]);
+  const [javaBooks, setJavaBooks] = useState([]);
+  const [dcBooks, setDcBooks] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
         const res = await axios.get("http://localhost:4001/book");
 
-        const sqldata = res.data.filter((data)=>data.name==="SQL");
-        const cndata = res.data.filter((data)=>data.name==="SQL");
+        const sqldata = res.data.filter((data)=>data.name==="DBMS");
+        const mprdata = res.data.filter((data)=>data.name==="MPR");
+        const javadata = res.data.filter((data)=>data.name==="JAVA");
+        const dcdata = res.data.filter((data)=>data.name==="DC");
         console.log(sqldata);
-        console.log(cndata);
+        console.log(mprdata);
+        console.log(javadata);
+        console.log(dcdata);
 
         setSqlBooks(sqldata);
-        setCnBooks(cndata);
+        setMprBooks(mprdata);
+        setJavaBooks(javadata);
+        setDcBooks(dcdata);
+
+
       } catch (error) {
         console.log(error);
       }
@@ -79,25 +89,44 @@ function Third() {
         <Navbar/>
      <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 my-20'>
         
-     <div>
-     <h1 className='font-semibold text-xl pb-2'>free notes</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fuga autem deleniti est temporibus excepturi. Dolorem, soluta voluptate. Rerum iste perspiciatis harum fugit voluptates, pariatur molestias animi modi unde voluptas!</p>
+     <div className='flex justify-center'>
+     <h1 className='font-semibold  text-4xl pb-2'>Third Semester</h1>
+      {/* <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fuga autem deleniti est temporibus excepturi. Dolorem, soluta voluptate. Rerum iste perspiciatis harum fugit voluptates, pariatur molestias animi modi unde voluptas!</p> */}
      </div>
+     <div className='mt-8 font-bold text-2xl text-blue-500'>Microprocessor</div>
      <div> 
+      <Slider {...settings}>
+       {mprBooks.map((item)=>(
+        <Card item={item} key={item.id}/>
+       ))}
+      </Slider>
+      </div>
+      <div className='mt-8 font-bold text-2xl text-blue-500'>Database Management System</div>
+      <div>
       <Slider {...settings}>
        {sqlBooks.map((item)=>(
         <Card item={item} key={item.id}/>
        ))}
       </Slider>
       </div>
-      <div className='mt-8 font-bold text-blue-500'>COMPUTER NETWORK</div>
+      <div className='mt-8 font-bold text-blue-500'>Java programming</div>
       <div>
       <Slider {...settings}>
-       {cnBooks.map((item)=>(
+       {javaBooks.map((item)=>(
         <Card item={item} key={item.id}/>
        ))}
       </Slider>
       </div>
+
+      <div className='mt-8 font-bold text-blue-500'>Data Communication</div>
+      <div>
+      <Slider {...settings}>
+       {dcBooks.map((item)=>(
+        <Card item={item} key={item.id}/>
+       ))}
+      </Slider>
+      </div>
+      
      </div>
      </div>
    </>

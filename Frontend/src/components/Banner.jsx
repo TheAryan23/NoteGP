@@ -13,8 +13,9 @@ export default function Banner() {
        Hello, polytechnic students here is your <span className='text-blue-400'>treasure of notes</span> preserve 
      </h1>
      <p className='text-xl font-semibold'>      
-       Hiiii hello dolor sit amet consectetur adipisicing elit. Suscipit est repellat
-       ex iure eum placeat quisquam ad quis sequi error ut rerum animi, neque alias porro nostrum deserunt ab voluptatem?
+       NoteGP is an student made community website to provide notes to the polytechnic students . 
+       explicitly desing to cover all theory sub of IT dept with curriculum .
+
      </p>
      
      <label className="input input-bordered flex items-center gap-2">

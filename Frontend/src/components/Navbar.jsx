@@ -12,8 +12,8 @@ function Navbar() {
     <>
       <li><a href='/'>Home</a></li>
       <li><a href='/course'>Notes</a></li>
-      <li><a href=''>Question paper</a></li>
-      <li><a>About us</a></li>
+      <li><a href='/quepage'>Question paper</a></li>
+      <li><a href='/aboutus'>About us</a></li>
     </>
    
   );

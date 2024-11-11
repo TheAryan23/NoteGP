@@ -6,12 +6,14 @@ import First from './courses/First'
 import Second from './courses/Second'
 import Fifth from './courses/Fifth'
 import Third from './courses/Third'
-import Fourth from './courses/fourth'
+import Fourth from './courses/Fourth.jsx'
 import Quecard from './components/Quecard'
 import Quepage from './quepaper/Quepage'
 import Signup from './components/Signup'
 import { Toaster } from 'react-hot-toast';
 import { useAuth } from '../context/AuthProvider'
+import Aboutus from './components/Aboutus.jsx'
+import About from './components/About.jsx'
 
 
 function App() {
@@ -29,7 +31,8 @@ function App() {
       <Route path='/course/fourth' element={<Fourth/>}/>
       <Route path='/course/fifth' element={<Fifth/>}/>
       <Route path='/signup' element={<Signup/>}/>
-      <Route path='/quepage' element={<Quecard/>}/>
+      <Route path='/quepage' element={<Quepage/>}/>
+      <Route path='/aboutus' element={<About/>}/>
      </Routes>
 
      <Toaster />

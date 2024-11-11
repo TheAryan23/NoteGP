@@ -17,7 +17,7 @@ function First() {
       try {
         const res = await axios.get("http://localhost:4001/book");
 
-        const data = res.data.filter((data)=>data.name==="SQL");
+        const data = res.data.filter((data)=>data.name==="CUR");
         console.log(data);
         setBook(data);
       } catch (error) {
@@ -75,8 +75,8 @@ function First() {
      <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 my-20'>
         
      <div>
-     <h1 className='font-semibold text-xl pb-2'>free notes</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fuga autem deleniti est temporibus excepturi. Dolorem, soluta voluptate. Rerum iste perspiciatis harum fugit voluptates, pariatur molestias animi modi unde voluptas!</p>
+     <h1 className='font-semibold text-2xl pb-2'>Curriculum</h1>
+    
      </div>
      <div> 
       <Slider {...settings}>

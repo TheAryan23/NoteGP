@@ -1,54 +1,38 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Quecard from '../components/Quecard'
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import Slider from "react-slick";
+import Navbar from '../components/Navbar'
+import axios from 'axios';
+
 
 
 function Quepage() {
-    var settings = {
-        dots: true,
-        infinite: false,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 3,
-        initialSlide: 0,
-        responsive: [
-          {
-            breakpoint: 1024,
-            settings: {
-              slidesToShow: 3,
-              slidesToScroll: 3,
-              infinite: true,
-              dots: true
-            }
-          },
-          {
-            breakpoint: 600,
-            settings: {
-              slidesToShow: 2,
-              slidesToScroll: 2,
-              initialSlide: 2
-            }
-          },
-          {
-            breakpoint: 480,
-            settings: {
-              slidesToShow: 1,
-              slidesToScroll: 1
-            }
-          }
-        ]
-      };
+  const [book, setBook] = useState([]);
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/book");
+
+        const data = res.data.filter((data)=>data.name==="QUE");
+        console.log(data);
+        setBook(data);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
+   
   return (
     <>
     <div className=''>
-    <Slider {...settings}>
-        {<Quecard/>
-        }
-      
-      </Slider>
-        
+    <Navbar/>
+    <div className='flex justify-center'><h1 className='mt-8 font-bold text-4xl text-white pb-2'>Question Paper</h1></div>
+    <div className="mt-12 grid grid-cols-1 md:grid-cols-4">
+          {book.map((item) => (
+            <Quecard key={item.id} item={item} />
+          ))}
+        </div>
+    
    
     </div>
     </>

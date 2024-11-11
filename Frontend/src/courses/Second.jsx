@@ -1,38 +1,35 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react' ;
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Slider from "react-slick";
-import axios from 'axios';
+import axios from 'axios'
 
 import list from '../../public/list.json';
 import Card from '../components/Card';
-import Navbar from '../components/Navbar';
-import Book from '../../../Backend/model/book.model';
-
+import Navbar from '../components/Navbar.jsx';
 
 function Second() {
-  const [book, setBook] = useState([]);
-  const getBook = async () => {
-    try {
-      const res = await axios.get("http://localhost:4001/book");
+  const [sqlBooks, setSqlBooks] = useState([]);
+  const [cnBooks, setCnBooks] = useState([]);
+  useEffect(() => {
+    const getBook = async () => {
+      try {
+        const res = await axios.get("http://localhost:4001/book");
 
-      // Filter for books with the name "SQL" or "CN"
-      const bookNames = ["SQL", "CN"];
-      const data = res.data.filter((book) => bookNames.includes(book.name));
+        const sqldata = res.data.filter((data)=>data.name==="DS");
+        const cndata = res.data.filter((data)=>data.name==="DT");
+        console.log(sqldata);
+        console.log(cndata);
 
-      console.log(data);
-      setBook(data);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-  getBook();
+        setSqlBooks(sqldata);
+        setCnBooks(cndata);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+    getBook();
+  }, []);
 
-  
-
-
-    
-   // const CNData=res.data.filter((data)=>data.name==="CN")
     var settings = {
         dots: true,
         infinite: false,
@@ -70,35 +67,36 @@ function Second() {
 
   return (
     
-        <>
-        <div className=''>
-        <Navbar/>
-     <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 my-20'>
         
-     <div>
-     <h1 className='font-semibold text-xl pb-2'>free notes</h1>
-      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Earum fuga autem deleniti est temporibus excepturi. Dolorem, soluta voluptate. Rerum iste perspiciatis harum fugit voluptates, pariatur molestias animi modi unde voluptas!</p>
-     </div>
-     <div> 
-      <Slider {...settings}>
-       {book.map((item)=>(
-        <Card item={item} key={item.id}/>
-       ))}
-      </Slider>
-      </div>
-     {/* <div className='mt-8 font-bold text-blue-500'>COMPUTER NETWORK</div>
-      <div>
-      <Slider {...settings}>
-       {CNData.map((item)=>(
-        <Card item={item} key={item.id}/>
-       ))}
-      </Slider>
-      </div>*/}
-     </div>
-     </div>
-   </>
-  )
+    <>
+    <div className=''>
+    <Navbar/>
+ <div className='max-w-screen-2xl container mx-auto md:px-20 px-4 my-20'>
+    
+ <div className='flex justify-center'>
+ <h1 className='mt-8 font-bold text-white text-4xl  pb-2 '>Second Semester</h1>
+  
+ </div>
+ <div className='mt-8 font-bold text-2xl text-blue-500'>Data Structure</div>
+ <div> 
+  <Slider {...settings}>
+   {sqlBooks.map((item)=>(
+    <Card item={item} key={item.id}/>
+   ))}
+  </Slider>
+  </div>
+  <div className='mt-8 font-bold text-2xl text-blue-500'>Digital Technique</div>
+  <div>
+  <Slider {...settings}>
+   {cnBooks.map((item)=>(
+    <Card item={item} key={item.id}/>
+   ))}
+  </Slider>
+  </div>
+ </div>
+ </div>
+</>
+)
 }
-
 
 export default Second

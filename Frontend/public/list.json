@@ -161,6 +161,56 @@
         "sem":"1st sem",
         "image":"https://img.freepik.com/premium-vector/web-developer-wiring-code-program-computer-programming_773186-690.jpg?w=900",
         "link":"https://play.tailwindcss.com/URokkSdCkT?layout=preview"
+    },
+    {
+        "id":34,
+        "name":"NIS",
+        "chpt": "Chapter no:1 ",
+        "title":"Introduction to Computer and Information Security  ",
+        "pages":"18 Pages",
+        "sem":"5th sem",
+        "image":"https://img.freepik.com/free-vector/security-system-background_23-2147626787.jpg?t=st=1731227722~exp=1731231322~hmac=8d9407f1d20ca0b91732634900970c09e0f8e831d9f0bc19489f861aed474da2&w=740",
+        "link":"https://drive.google.com/file/d/1cwraqx2nSLYqtTZg98iCky0WAOBHWxgD/view?usp=drive_link"
+    },
+    {
+        "id":34,
+        "name":"NIS",
+        "chpt": "Chapter no:2 ",
+        "title":"User Authentication and Access Control  ",
+        "pages":"18 Pages",
+        "sem":"5th sem",
+        "image":"https://img.freepik.com/free-vector/security-system-background_23-2147626787.jpg?t=st=1731227722~exp=1731231322~hmac=8d9407f1d20ca0b91732634900970c09e0f8e831d9f0bc19489f861aed474da2&w=740",
+        "link":"https://drive.google.com/file/d/1CLHXwrU2I9DnMca1837wcnHZaWCEOUrg/view?usp=drive_link"
+    },
+    {
+        "id":34,
+        "name":"NIS",
+        "chpt": "Chapter no:3 ",
+        "title":"Cryptography ",
+        "pages":"18 Pages",
+        "sem":"5th sem",
+        "image":"https://img.freepik.com/free-vector/security-system-background_23-2147626787.jpg?t=st=1731227722~exp=1731231322~hmac=8d9407f1d20ca0b91732634900970c09e0f8e831d9f0bc19489f861aed474da2&w=740",
+        "link":"https://drive.google.com/file/d/1gTAZPpzvKAnW5BmQI4lJ11vFTmQCuhgx/view?usp=drive_link"
+    },
+    {
+        "id":34,
+        "name":"NIS",
+        "chpt": "Chapter no:4 ",
+        "title":"Firewall and Intrusion Detection System  ",
+        "pages":"18 Pages",
+        "sem":"5th sem",
+        "image":"https://img.freepik.com/free-vector/security-system-background_23-2147626787.jpg?t=st=1731227722~exp=1731231322~hmac=8d9407f1d20ca0b91732634900970c09e0f8e831d9f0bc19489f861aed474da2&w=740",
+        "link":"https://drive.google.com/file/d/1GX0KA9QlE_so8XSGhiI_rm9kewmKOsrs/view?usp=drive_link"
+    },
+    {
+        "id":34,
+        "name":"NIS",
+        "chpt": "Chapter no:5 ",
+        "title":"Network Security & Cyber Laws ",
+        "pages":"18 Pages",
+        "sem":"5th sem",
+        "image":"https://img.freepik.com/free-vector/security-system-background_23-2147626787.jpg?t=st=1731227722~exp=1731231322~hmac=8d9407f1d20ca0b91732634900970c09e0f8e831d9f0bc19489f861aed474da2&w=740",
+        "link":"https://drive.google.com/file/d/1mQTEPKfCidmVQ2EvDtZjXBXRf7c85tqA/view?usp=drive_link"
     }
     
      
