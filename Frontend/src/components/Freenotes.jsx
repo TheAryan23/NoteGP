@@ -11,7 +11,6 @@ import Book from '../../../Backend/model/book.model';
 
 function Freenotes() {
   const [book, setBook] = useState([]);
-  const ApiUrl = process.env.REACT_APP_API_URL;
   useEffect(() => {
     const getBook = async () => {
       try {
