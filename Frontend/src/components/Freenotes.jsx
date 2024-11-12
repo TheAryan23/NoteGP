@@ -11,10 +11,12 @@ import Book from '../../../Backend/model/book.model';
 
 function Freenotes() {
   const [book, setBook] = useState([]);
+
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get(`${ApiUrl}/book`);
+        const res = await axios.get("http://localhost:4001/book");
+
         const data = res.data.filter((data)=>data.name==="HTML");
         console.log(data);
         setBook(data);

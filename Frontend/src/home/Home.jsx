@@ -9,7 +9,7 @@ function Home() {
     <div className=''>
     <Navbar/>
      <Banner/>
-     <Freenotes/>
+     
     </div>
      
     
