@@ -11,7 +11,7 @@ import Quecard from './components/Quecard'
 import Quepage from './quepaper/Quepage'
 import Signup from './components/Signup'
 import { Toaster } from 'react-hot-toast';
-import { useAuth } from '../context/AuthProvider'
+import { useAuth } from '../context/AuthProvider.jsx'
 
 import About from './components/About.jsx'
 
